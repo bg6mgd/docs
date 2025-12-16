@@ -77,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#mkdocsgithub" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -107,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              首页
+              MkDocs搭建个人博客
             
           </span>
         </div>
@@ -200,7 +205,7 @@
   
     
   
-  首页
+  MkDocs搭建个人博客
 
       </a>
     </li>
@@ -220,25 +225,6 @@
     
   
   创建Git服务器
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="git/mkdocs/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  MkDocs搭建个人博客
 
       </a>
     </li>
@@ -291,6 +277,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MkDocs搭建个人博客
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="." class="md-nav__link md-nav__link--active">
         
@@ -299,7 +305,7 @@
   <span class="md-ellipsis">
     
   
-    首页
+    MkDocs搭建个人博客
   
 
     
@@ -308,6 +314,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.安装mkdocs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2新建项目
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.仓库绑定
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.编辑内容
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.发布
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -340,33 +420,6 @@
   
 
     
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="git/mkdocs/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    MkDocs搭建个人博客
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -384,6 +437,71 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.安装mkdocs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2新建项目
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.仓库绑定
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.编辑内容
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.发布
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -400,15 +518,89 @@
 
 
 
-  <h1>首页</h1>
+<h1 id="mkdocsgithub">用mkdocs搭建github个人博客<a class="headerlink" href="#mkdocsgithub" title="Permanent link">&para;</a></h1>
+<h2 id="1mkdocs">1.安装mkdocs<a class="headerlink" href="#1mkdocs" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>pip install mkdocs 安装工具
+</code></pre></div>
+<h2 id="2">2新建项目<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>mkdocs new 博客名字
+cd 博客名字
+git init
+git add .
+git commit -m &quot;update&quot;
+## 3.用ssh公钥绑定github 搜索方法，这里不再赘述。
+</code></pre></div>
+<h2 id="4">4.仓库绑定<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>git remote add origin https://github.com/bg6mgd/docs.git
+上面不行了，用下面这个
+git remote set-url origin git@github.com:bg6mgd/docs.git
+git branch -M main
 
-<p>首页</p>
+`git remote -v` 用来**查看当前仓库配置的远程仓库地址**。  
+典型输出：
+origin  git@github.com:user/repo.git (fetch) 
+origin  git@github.com:user/repo.git (push)
+</code></pre></div>
+<h2 id="5">5.编辑内容<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<p>在文件夹中找到mkdocs.yml配置文件，编辑配置内容
+<div class="highlight"><pre><span></span><code>site_name: 我的博客
+site_url: https://bg6mgd.github.io/docs/
+site_description: 技术与笔记
+site_author: lego
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs        # 顶部页头标签
+    - navigation.sections    # 左侧分组
+    - navigation.expand      # 左侧默认展开
+    - navigation.top         # 返回顶部
+    #- toc.integrate          # 目录合并到左侧
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+
+nav:
+  - 首页: index.md
+  - 编程: python/index.md
+
+  - 工具:
+    - 创建Git服务器: git/gitserver.md
+    - MkDocs搭建个人博客: tools/mkdocs.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.details
+
+
+plugins:
+  - search
+在docs文件中，创建md文件，写入内容，并在mkdocs.yml中设置关联。
+</code></pre></div></p>
+<h2 id="6">6.发布<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>mkdocs gh-deploy
+
+当网站有残余
+
+mkdocs build --clean  清除残余
+发布
+mkdocs gh-deploy
+</code></pre></div>
 
 
 
 
 
 
+
+  
+  
 
 
 
