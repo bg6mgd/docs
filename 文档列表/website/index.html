@@ -12,13 +12,11 @@
         <meta name="author" content="lego">
       
       
-        <link rel="canonical" href="https://bg6mgd.github.io/docs/%E6%96%87%E6%A1%A3%E5%88%97%E8%A1%A8/gitserver/">
+        <link rel="canonical" href="https://bg6mgd.github.io/docs/%E6%96%87%E6%A1%A3%E5%88%97%E8%A1%A8/website/">
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../mkdocs/">
       
-      
-        <link rel="next" href="../mkdocs/">
       
       
         
@@ -29,7 +27,7 @@
     
     
       
-        <title>搭建git仓库服务器 - 我的博客</title>
+        <title>网站模板修改 - 我的博客</title>
       
     
     
@@ -80,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#git" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -114,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              搭建git仓库服务器
+              网站模板修改
             
           </span>
         </div>
@@ -222,7 +220,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../gitserver/" class="md-tabs__link">
           
   
   
@@ -355,37 +353,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    搭建git仓库服务器
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../gitserver/" class="md-nav__link">
         
   
   
@@ -401,81 +372,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.准备工作
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2git" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2.安装git
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3clone" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.在客户机上clone
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.如果本地已经有仓库，如何推到服务器上呢
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.常用命令
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -513,10 +409,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../website/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -532,6 +437,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -564,69 +470,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.准备工作
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2git" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2.安装git
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3clone" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.在客户机上clone
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.如果本地已经有仓库，如何推到服务器上呢
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.常用命令
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -642,86 +485,15 @@
 
 
 
-<h1 id="git">搭建git仓库服务器<a class="headerlink" href="#git" title="Permanent link">&para;</a></h1>
-<h2 id="1">1.准备工作<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
-<p>准备一台linux服务器。</p>
-<h2 id="2git">2.安装git<a class="headerlink" href="#2git" title="Permanent link">&para;</a></h2>
-<p>服务器上如果没有安装git，执行以下语句安装</p>
-<div class="highlight"><pre><span></span><code>sudo apt install git
-sudo adduser git 
-创建git用户
-getent passwd git 
-确认 `git` 用户是否存在，以及它的 UID/GID、家目录、默认 shell 等信息
-sudo chsh -s /usr/bin/git-shell git 
-让 git`用户不能获得普通交互式 shell（如 bash），而只能执行 git-shell 允许的命令（常用于限制账号用途，只用于 Git/SSH）
-sudo mkdir -p /home/git/.ssh 
-创建ssh秘钥文件夹
-sudo chown git:git /home/git/.ssh
-确保这个目录归 `git` 用户管理，SSH 才能正常读取/写入相关文件（尤其是 `authorized_keys`）
-在客户端上 执行 ssh-keygen -t ed25519 
-生成的公钥粘贴到服务器/home/git/.ssh/authorized_keys文件内容
+<h1 id="_1">网站模板修改<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code>node.js 10.24.1版本
 
-sudo nano /home/git/.ssh/authorized_keys
+npm install 安装依赖
 
-sudo chown git:git /home/git/.ssh/authorized_keys
-把 authorized_keys 文件的所有者和所属组改为 git，保证只有 git 用户可以操作。
-sudo chmod 600 /home/git/.ssh/authorized_keys
-保证 authorized_keys 只有 git 用户能读写，其他人不能访问，这是 SSH 安全要求。
-sudo chmod 700 /home/git/.ssh
-保证 .ssh 目录只有 git 用户能进入和操作，增加 SSH 安全性。
+在项目文件夹中执行命令
 
-git config --global user.email &quot;you@example.com&quot; 添加邮箱
-git config --global user.name &quot;Your Name&quot;
-添加名字  后续commit时系统就记录是谁提交的了。每次执行git log就可以看得到
-sudo -u git mkdir -p /home/git/repos/myproject.git
-创建第一个裸仓库
-sudo -u git git init --bare /home/git/repos/myproject.git
-初始化仓库
-</code></pre></div>
-<h2 id="3clone">3.在客户机上clone<a class="headerlink" href="#3clone" title="Permanent link">&para;</a></h2>
-<p>在客户机上安装git。
-如果是Windows系统，需要下载gitforWindows 软件包
-如果是linux 
-执行命令 sudo apt install git 进行安装
-安装完毕后clone
-<div class="highlight"><pre><span></span><code>git clone ssh://yourserver:port/home/git/repos/myproject.git
-cd .\myproject\
-</code></pre></div></p>
-<h2 id="4">4.如果本地已经有仓库，如何推到服务器上呢<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>第一步，还是要在服务器上创建裸仓库
-sudo -u git mkdir -p /home/git/repos/myproject.git
-创建第一个裸仓库
-sudo -u git git init --bare /home/git/repos/myproject.git
-初始化仓库
-
-第二步，
-本地仓库绑定远程仓库 git remote add origin ssh://git@www.880821.xyz:2200/home/git/repos/graindata.git
-
-验证绑定  git remote -v
-重命名本地仓库 git branch -m master main
-设置上传分支 git push --set-upstream origin main
-上传同步 git push
-</code></pre></div>
-<h2 id="5">5.常用命令<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>git branch 查看本地分支
-  git branch -a 显示远程分支
-  git branch dev 创建分支dev
-  git checkout -b &lt;name&gt; / git switch -c &lt;name&gt;
-  新建并立即切换
-
-切换分支：git switch &lt;name&gt;
-
-创建+切换分支：git switch -c &lt;name&gt;
-
-合并某分支到当前分支：git merge &lt;name&gt;
-
-删除分支：git branch -d &lt;name&gt;
-
-删除分支git branch -d &lt;name&gt;删除已合并的分支，`-D` 强制删除
-
-
-
-git push 推送到服务器
+npm run dev 启动开发环境
+执行这条命令，可以边改边看效果，非常不错。
 </code></pre></div>
 
 
