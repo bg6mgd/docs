@@ -15,10 +15,10 @@
         <link rel="canonical" href="https://bg6mgd.github.io/docs/git/gitserver/">
       
       
-        <link rel="prev" href="../../python/">
+        <link rel="prev" href="../..">
       
       
-        <link rel="next" href="../../tools/mkdocs/">
+        <link rel="next" href="../mkdocs/">
       
       
         
@@ -216,15 +216,17 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../../python/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
     
   
-  编程
+  创建Git服务器
 
       </a>
     </li>
@@ -235,21 +237,18 @@
   
   
   
-    
+  
+    <li class="md-tabs__item">
+      <a href="../mkdocs/" class="md-tabs__link">
+        
   
   
     
-    
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
-          
   
-  
-  工具
+  MkDocs搭建个人博客
 
-        </a>
-      </li>
-    
+      </a>
+    </li>
   
 
       
@@ -315,90 +314,6 @@
     
       
       
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../python/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    编程
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    工具
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    工具
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
   
   
     
@@ -525,16 +440,15 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../tools/mkdocs/" class="md-nav__link">
+      <a href="../mkdocs/" class="md-nav__link">
         
   
   
@@ -550,14 +464,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -662,9 +568,9 @@
 
 <h1 id="git">搭建git仓库服务器<a class="headerlink" href="#git" title="Permanent link">&para;</a></h1>
 <h2 id="1">1.准备工作<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
-<p>一台linux服务器。</p>
+<p>准备一台linux服务器。</p>
 <h2 id="2git">2.安装git<a class="headerlink" href="#2git" title="Permanent link">&para;</a></h2>
-<p>如果没有git，执行以下语句安装</p>
+<p>服务器上如果没有安装git，执行以下语句安装</p>
 <div class="highlight"><pre><span></span><code>sudo apt install git
 sudo adduser git 
 创建git用户
@@ -697,8 +603,10 @@ sudo -u git git init --bare /home/git/repos/myproject.git
 初始化仓库
 </code></pre></div>
 <h2 id="3clone">3.在客户机上clone<a class="headerlink" href="#3clone" title="Permanent link">&para;</a></h2>
-<p>在客户机上安装git Windows系统，需要下载gitforWindows 软件包
-linux 执行 sudo apt install git 安装
+<p>在客户机上安装git。
+如果是Windows系统，需要下载gitforWindows 软件包
+如果是linux 
+执行命令 sudo apt install git 进行安装
 安装完毕后clone
 <div class="highlight"><pre><span></span><code>git clone ssh://yourserver:port/home/git/repos/myproject.git
 cd .\myproject\
