@@ -12,13 +12,13 @@
         <meta name="author" content="lego">
       
       
-        <link rel="canonical" href="https://bg6mgd.github.io/docs/git/mkdocs/">
+        <link rel="canonical" href="https://bg6mgd.github.io/docs/%E5%88%86%E7%B1%BB/gitserver/">
       
       
         <link rel="prev" href="../..">
       
       
-        <link rel="next" href="../gitserver/">
+        <link rel="next" href="../mkdocs/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>MkDocs搭建个人博客 - 我的博客</title>
+        <title>搭建git仓库服务器 - 我的博客</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mkdocsgithub" class="md-skip">
+        <a href="#git" class="md-skip">
           跳转至
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              MkDocs搭建个人博客
+              搭建git仓库服务器
             
           </span>
         </div>
@@ -219,36 +219,18 @@
     
   
   
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
-        
-  
-  
     
-  
-  MkDocs搭建个人博客
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../gitserver/" class="md-tabs__link">
-        
-  
-  
     
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
   
-  创建Git服务器
+  
+  分类
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -320,6 +302,63 @@
   
   
   
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    分类
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    分类
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
@@ -335,7 +374,7 @@
   <span class="md-ellipsis">
     
   
-    MkDocs搭建个人博客
+    搭建git仓库服务器
   
 
     
@@ -353,7 +392,7 @@
   <span class="md-ellipsis">
     
   
-    MkDocs搭建个人博客
+    搭建git仓库服务器
   
 
     
@@ -379,10 +418,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1mkdocs" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.安装mkdocs
+        1.准备工作
       
     </span>
   </a>
@@ -390,10 +429,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2git" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.新建项目
+        2.安装git
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3clone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.在客户机上clone
       
     </span>
   </a>
@@ -404,7 +454,7 @@
   <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.仓库绑定
+        4.如果本地已经有仓库，如何推到服务器上呢
       
     </span>
   </a>
@@ -415,18 +465,7 @@
   <a href="#5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.编辑内容
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6.发布
+        5.常用命令
       
     </span>
   </a>
@@ -440,22 +479,23 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
   
     <li class="md-nav__item">
-      <a href="../gitserver/" class="md-nav__link">
+      <a href="../mkdocs/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    创建Git服务器
+    用mkdocs搭建github个人博客
   
 
     
@@ -464,6 +504,14 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -495,10 +543,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1mkdocs" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.安装mkdocs
+        1.准备工作
       
     </span>
   </a>
@@ -506,10 +554,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2git" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.新建项目
+        2.安装git
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3clone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.在客户机上clone
       
     </span>
   </a>
@@ -520,7 +579,7 @@
   <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.仓库绑定
+        4.如果本地已经有仓库，如何推到服务器上呢
       
     </span>
   </a>
@@ -531,18 +590,7 @@
   <a href="#5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.编辑内容
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6.发布
+        5.常用命令
       
     </span>
   </a>
@@ -566,79 +614,86 @@
 
 
 
-<h1 id="mkdocsgithub">用mkdocs搭建github个人博客<a class="headerlink" href="#mkdocsgithub" title="Permanent link">&para;</a></h1>
-<h2 id="1mkdocs">1.安装mkdocs<a class="headerlink" href="#1mkdocs" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>pip install mkdocs 安装工具
+<h1 id="git">搭建git仓库服务器<a class="headerlink" href="#git" title="Permanent link">&para;</a></h1>
+<h2 id="1">1.准备工作<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<p>准备一台linux服务器。</p>
+<h2 id="2git">2.安装git<a class="headerlink" href="#2git" title="Permanent link">&para;</a></h2>
+<p>服务器上如果没有安装git，执行以下语句安装</p>
+<div class="highlight"><pre><span></span><code>sudo apt install git
+sudo adduser git 
+创建git用户
+getent passwd git 
+确认 `git` 用户是否存在，以及它的 UID/GID、家目录、默认 shell 等信息
+sudo chsh -s /usr/bin/git-shell git 
+让 git`用户不能获得普通交互式 shell（如 bash），而只能执行 git-shell 允许的命令（常用于限制账号用途，只用于 Git/SSH）
+sudo mkdir -p /home/git/.ssh 
+创建ssh秘钥文件夹
+sudo chown git:git /home/git/.ssh
+确保这个目录归 `git` 用户管理，SSH 才能正常读取/写入相关文件（尤其是 `authorized_keys`）
+在客户端上 执行 ssh-keygen -t ed25519 
+生成的公钥粘贴到服务器/home/git/.ssh/authorized_keys文件内容
+
+sudo nano /home/git/.ssh/authorized_keys
+
+sudo chown git:git /home/git/.ssh/authorized_keys
+把 authorized_keys 文件的所有者和所属组改为 git，保证只有 git 用户可以操作。
+sudo chmod 600 /home/git/.ssh/authorized_keys
+保证 authorized_keys 只有 git 用户能读写，其他人不能访问，这是 SSH 安全要求。
+sudo chmod 700 /home/git/.ssh
+保证 .ssh 目录只有 git 用户能进入和操作，增加 SSH 安全性。
+
+git config --global user.email &quot;you@example.com&quot; 添加邮箱
+git config --global user.name &quot;Your Name&quot;
+添加名字  后续commit时系统就记录是谁提交的了。每次执行git log就可以看得到
+sudo -u git mkdir -p /home/git/repos/myproject.git
+创建第一个裸仓库
+sudo -u git git init --bare /home/git/repos/myproject.git
+初始化仓库
 </code></pre></div>
-<h2 id="2">2.新建项目<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>mkdocs new 博客名字
-cd 博客名字
-git init
-git add .
-git commit -m &quot;update&quot;
-## 3.用ssh公钥绑定github 搜索方法，这里不再赘述。
-</code></pre></div>
-<h2 id="4">4.仓库绑定<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>git remote add origin https://github.com/bg6mgd/docs.git
-上面不行了，用下面这个
-git remote set-url origin git@github.com:bg6mgd/docs.git
-git branch -M main
-
-`git remote -v` 用来**查看当前仓库配置的远程仓库地址**。  
-典型输出：
-origin  git@github.com:user/repo.git (fetch) 
-origin  git@github.com:user/repo.git (push)
-</code></pre></div>
-<h2 id="5">5.编辑内容<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
-<p>在文件夹中找到mkdocs.yml配置文件，编辑配置内容
-<div class="highlight"><pre><span></span><code>site_name: 我的博客
-site_url: https://bg6mgd.github.io/docs/
-site_description: 技术与笔记
-site_author: lego
-
-theme:
-  name: material
-  language: zh
-  features:
-    - navigation.tabs        # 顶部页头标签
-    - navigation.sections    # 左侧分组
-    - navigation.expand      # 左侧默认展开
-    - navigation.top         # 返回顶部
-    #- toc.integrate          # 目录合并到左侧
-  palette:
-    - scheme: default
-      primary: blue
-      accent: blue
-
-nav:
-  - 首页: index.md
-  - 编程: python/index.md
-
-  - 工具:
-    - 创建Git服务器: git/gitserver.md
-    - MkDocs搭建个人博客: tools/mkdocs.md
-
-markdown_extensions:
-  - admonition
-  - toc:
-      permalink: true
-  - pymdownx.superfences
-  - pymdownx.highlight
-  - pymdownx.details
-
-
-plugins:
-  - search
-在docs文件中，创建md文件，写入内容，并在mkdocs.yml中设置关联。
+<h2 id="3clone">3.在客户机上clone<a class="headerlink" href="#3clone" title="Permanent link">&para;</a></h2>
+<p>在客户机上安装git。
+如果是Windows系统，需要下载gitforWindows 软件包
+如果是linux 
+执行命令 sudo apt install git 进行安装
+安装完毕后clone
+<div class="highlight"><pre><span></span><code>git clone ssh://yourserver:port/home/git/repos/myproject.git
+cd .\myproject\
 </code></pre></div></p>
-<h2 id="6">6.发布<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>mkdocs gh-deploy
+<h2 id="4">4.如果本地已经有仓库，如何推到服务器上呢<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>第一步，还是要在服务器上创建裸仓库
+sudo -u git mkdir -p /home/git/repos/myproject.git
+创建第一个裸仓库
+sudo -u git git init --bare /home/git/repos/myproject.git
+初始化仓库
 
-当网站有残余
+第二步，
+本地仓库绑定远程仓库 git remote add origin ssh://git@www.880821.xyz:2200/home/git/repos/graindata.git
 
-mkdocs build --clean  清除残余
-发布
-mkdocs gh-deploy
+验证绑定  git remote -v
+重命名本地仓库 git branch -m master main
+设置上传分支 git push --set-upstream origin main
+上传同步 git push
+</code></pre></div>
+<h2 id="5">5.常用命令<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>git branch 查看本地分支
+  git branch -a 显示远程分支
+  git branch dev 创建分支dev
+  git checkout -b &lt;name&gt; / git switch -c &lt;name&gt;
+  新建并立即切换
+
+切换分支：git switch &lt;name&gt;
+
+创建+切换分支：git switch -c &lt;name&gt;
+
+合并某分支到当前分支：git merge &lt;name&gt;
+
+删除分支：git branch -d &lt;name&gt;
+
+删除分支git branch -d &lt;name&gt;删除已合并的分支，`-D` 强制删除
+
+
+
+git push 推送到服务器
 </code></pre></div>
 
 
@@ -646,9 +701,6 @@ mkdocs gh-deploy
 
 
 
-
-  
-  
 
 
 
